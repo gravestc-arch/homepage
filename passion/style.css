@@ -1,0 +1,24 @@
+html {
+    font-size: 200%;
+    padding-top: 20%;
+    body {
+    background-image: url("yup.jpeg"); /* Light gray background */
+    background-size:cover;
+    font-family: Arial, sans-serif;
+    background-repeat: repeat-y;
+    text-align: center;
+   
+}
+
+h1 {
+    vertical-align: length/200%;
+    color: rgb(27, 19, 0);
+    font-size: 300%;
+    font-family: 'Times New Roman';
+}
+
+p {
+    color: rgb(27, 19, 0);
+    line-height: 1.5;
+}
+}
