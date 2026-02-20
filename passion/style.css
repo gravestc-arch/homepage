@@ -1,5 +1,5 @@
 html {
-    font-size: 200%;
+    font-size: 300%;
     padding-top: 20%;
     body {
     background-image: url("yup.jpeg"); /* Light gray background */
@@ -13,12 +13,13 @@ html {
 h1 {
     vertical-align: length/200%;
     color: rgb(27, 19, 0);
-    font-size: 300%;
+    font-size: 500%;
     font-family: 'Times New Roman';
 }
 
 p {
     color: rgb(27, 19, 0);
     line-height: 1.5;
+    font-size: 100%;
 }
 }
