@@ -1,0 +1,33 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: lightgrey;
+    width: 200px;
+    height: 200px;
+    /*animation-name: test;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0,2.01,1,-0.82);
+    animation-direction: alternate;*/
+    
+    animation: test 4s 2s infinite linear alternate both;
+
+    /*in the animation shorthand property, the first time value corresponds with animation duration, and the second time value corresponds with the delay */
+}
+
+@keyframes test {
+    0% {
+        background-color: red;
+        height: 200px;
+    }
+    100% {
+        background-color: yellow;
+        height: 400px;
+    }
+
+}
+
