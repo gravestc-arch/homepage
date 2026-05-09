@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css" media="all"> 
+        <style>
+    body {
+            background: url("grass_wind_animation.gif");
+  background-repeat:repeat;
+  background-attachment:scroll;
+  background-position:center top;
+  background-size: 75px;
+}
+body { height: 1850px; cursor: pointer; }
+  #myImage {
+    display: none;
+    position:absolute;
+    width: 1260px;     
+  }
+         </style>
+    </head>
+   
+    
+    <body> 
+        <h1 style="margin-left: 12cm" style="font-family: fantasy;"> Make your own river! </h1>
+<script>
+let currentZIndex = 2;
+
+document.addEventListener('click', function(e) {
+  // 1. Create the image
+  let newImg = document.createElement('img');
+  newImg.src = 'river h.gif'; // Change this to your image link
+  
+  // 2. Set style for stacking and positioning
+  newImg.style.position = 'absolute';
+  newImg.style.width = '80px'; // Set a size
+  newImg.style.left = (e.pageX - 10) + 'px'; // Center it on the click
+  newImg.style.top = (e.pageY - 10
+  ) + 'px';
+
+   let newImg2 = document.createElement('img2');
+  newImg2.src = 'river v.gif'; // Change this to your image link
+  
+  // 2. Set style for stacking and positioning
+  newImg2.style.position = 'absolute';
+  newImg2.style.width = '80px'; // Set a size
+  newImg2.style.left = (e.pageX - 10) + 'px'; // Center it on the click
+  newImg2.style.top = (e.pageY - 10
+  ) + 'px';
+  
+  // 3. Ensure the newest one is always on top
+  newImg.style.zIndex = currentZIndex;
+  currentZIndex++;
+
+  // 4. Add it to the page
+  document.body.appendChild(newImg);
+  document.body.appendChild(newImg2);
+});
+</script>
+    </body>
+</html>
