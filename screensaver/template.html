@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-<div class="main"></div>    </head>
+        <style>
+body {
+    background-color: black;
+}
+.circle {
+   text-align: center;
+    width: 500px;
+    height:500px;
+    margin-top: 200px;
+    margin: 375px;
+    background-color: aquamarine;
+    animation: morph 3s infinite;
+}
+@keyframes morph {
+   0%,100%  {
+    clip-path: inset(0 round 0%);
+    background-color: aquamarine;
+   }
+ 
+
+   50% {
+    clip-path: inset(0 round 50%);
+    background-color: greenyellow;
+  }
+}
+</style>
+   </head>
     <body>
-        
+     <div class="circle"></div>  
+     
     </body>
 </html>
